@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cccb9d;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semproj.controller.RegistrationController">
+    <children>
+        <AnchorPane layoutX="-7.0" layoutY="84.0" prefHeight="342.0" prefWidth="757.0" style="-fx-background-color: #212121;">
+            <children>
+                <PasswordField fx:id="Password_Field" layoutX="392.0" layoutY="114.0" prefHeight="46.0" prefWidth="336.0" promptText="Пароль" style="-fx-background-color: #dfe3eb; -fx-border-color: silver; -fx-border-radius: 5;">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </PasswordField>
+                <TextField fx:id="Firsntame_Field" layoutX="27.0" layoutY="22.0" prefHeight="46.0" prefWidth="336.0" promptText="Имя" style="-fx-background-color: #dfe3eb; -fx-border-color: silver; -fx-border-radius: 5;">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="RegistrationBtn" layoutX="249.0" layoutY="268.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="228.0" style="-fx-background-color: #cccb9d;" text="Зарегистрироваться" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="Constantia Bold" size="18.0" />
+                    </font>
+                </Button>
+            <TextField fx:id="Login_Field" layoutX="27.0" layoutY="114.0" prefHeight="46.0" prefWidth="336.0" promptText="Логин" style="-fx-background-color: #dfe3eb; -fx-border-color: silver; -fx-border-radius: 5;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Lastname_Field" layoutX="392.0" layoutY="22.0" prefHeight="46.0" prefWidth="336.0" promptText="Фамилия" style="-fx-background-color: #dfe3eb; -fx-border-color: silver; -fx-border-radius: 5;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="AdminCode_Field" layoutX="585.0" layoutY="262.0" prefHeight="46.0" prefWidth="118.0" style="-fx-background-color: #212121; -fx-border-color: #212121; -fx-border-radius: 5;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </PasswordField>
+            </children>
+        </AnchorPane>
+        <Label layoutX="204.0" layoutY="14.0" text="LKS Showroom">
+            <font>
+                <Font name="ISOCT_IV50" size="36.0" />
+            </font>
+        </Label>
+    </children>
+
+</AnchorPane>

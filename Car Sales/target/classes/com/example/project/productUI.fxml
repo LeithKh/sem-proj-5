@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cccb9d;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semproj.controller.ProductController">
+    <children>
+        <AnchorPane fx:id="ActorP" layoutX="-7.0" layoutY="84.0" prefHeight="449.0" prefWidth="845.0" style="-fx-background-color: #212121;">
+            <children>
+                <Button fx:id="Profile_btn" layoutX="17.0" layoutY="14.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="114.0" text="Профиль" />
+                <Button fx:id="Product_btn" layoutX="371.0" layoutY="14.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="114.0" text="Товары" />
+                <Button fx:id="WishList_btn" layoutX="723.0" layoutY="14.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="114.0" text="Корзина" />
+                <Button fx:id="Exit_btn" layoutX="14.0" layoutY="395.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="114.0" text="Выход" />
+            <TableView fx:id="productTable" layoutX="17.0" layoutY="73.0" prefHeight="218.0" prefWidth="696.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="40.99999809265137" text="Id" />
+                <TableColumn fx:id="name" prefWidth="173.40001678466797" text="Name" />
+                  <TableColumn fx:id="segment" prefWidth="125.0" text="Segment" />
+                  <TableColumn fx:id="cost" prefWidth="120.0" text="Cost" />
+                  <TableColumn fx:id="count" prefWidth="120.0" text="Count" />
+                  <TableColumn fx:id="grade" prefWidth="121.0" text="Grade" />
+              </columns>
+            </TableView>
+            <Button fx:id="AddToCart_btn" layoutX="534.0" layoutY="344.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="201.0" text="Добавить в корзину">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="AddComment_btn" layoutX="178.0" layoutY="348.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="258.0" text="Оставить пожелание">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="AddGrade_btn" layoutX="500.0" layoutY="285.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="236.0" text="Оставить оценку" visible="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="CheckComments_btn" layoutX="178.0" layoutY="391.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="258.0" text="Посмотреть пожелания">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <TextField fx:id="Grade" layoutX="88.0" layoutY="307.0" prefHeight="39.0" prefWidth="34.0" />
+            <Label layoutX="134.0" layoutY="306.0" text="/ 5" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Button fx:id="Cheap_btn" layoutX="731.0" layoutY="127.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" text="Бюджету" />
+            <Button fx:id="Expensive_btn" layoutX="731.0" layoutY="168.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" text="Классу" />
+            <Label layoutX="717.0" layoutY="93.0" prefHeight="27.0" prefWidth="128.0" text="Сортировка по" textFill="#cccb9d">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Review_Field" layoutX="178.0" layoutY="312.0" prefHeight="29.0" prefWidth="258.0" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="248.0" layoutY="14.0" text="LKS Showroom">
+            <font>
+                <Font name="ISOCT_IV50" size="36.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

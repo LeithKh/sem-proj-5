@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="732.0" prefWidth="1044.0" style="-fx-background-color: #cccb9d;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semproj.controller.AdminController">
+    <children>
+        <AnchorPane fx:id="ActorP" layoutX="-7.0" layoutY="84.0" prefHeight="649.0" prefWidth="1053.0" style="-fx-background-color: #212121;">
+            <children>
+                <CheckBox fx:id="Language" layoutX="957.0" layoutY="14.0" mnemonicParsing="false" text="English" textFill="WHITE" />
+                <CheckBox fx:id="Theme" layoutX="956.0" layoutY="48.0" mnemonicParsing="false" text="White" textFill="WHITE" />
+            <TableView fx:id="UserTable" layoutX="14.0" layoutY="7.0" prefHeight="163.0" prefWidth="395.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="50.0" text="id" />
+                <TableColumn fx:id="name" prefWidth="139.0" text="Name" />
+                  <TableColumn fx:id="cost" prefWidth="108.0" text="Balance" />
+                  <TableColumn fx:id="locked" prefWidth="97.0" text="Locked" />
+              </columns>
+            </TableView>
+            <Button fx:id="Block_btn" layoutX="100.0" layoutY="192.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="222.0" text="Заблокировать / разблокировать" />
+            <TableView fx:id="RequestTable" layoutX="483.0" layoutY="7.0" prefHeight="163.0" prefWidth="279.0">
+              <columns>
+                <TableColumn fx:id="idUser" prefWidth="107.0" text="idUser" />
+                <TableColumn fx:id="Request" prefWidth="171.0" text="Request" />
+              </columns>
+            </TableView>
+            <Button fx:id="Accept_btn" layoutX="572.0" layoutY="193.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="114.0" text="Принять запрос" />
+            <TableView fx:id="productTable" layoutX="14.0" layoutY="265.0" prefHeight="316.0" prefWidth="701.0">
+               <columns>
+                  <TableColumn fx:id="id1" prefWidth="52.0" text="Id" />
+                  <TableColumn fx:id="name1" prefWidth="162.0" text="Name" />
+                  <TableColumn fx:id="segment" prefWidth="125.0" text="Segment" />
+                  <TableColumn fx:id="cost1" prefWidth="120.0" text="Cost" />
+                  <TableColumn fx:id="count" prefWidth="120.0" text="Count" />
+                  <TableColumn fx:id="grade" prefWidth="121.0" text="Grade" />
+               </columns>
+            </TableView>
+            <TextField fx:id="CarName_Field" layoutX="838.0" layoutY="282.0" prefHeight="25.0" prefWidth="191.0" />
+            <Label fx:id="CarName_lable" layoutX="728.0" layoutY="281.0" prefHeight="27.0" prefWidth="99.0" text="Название" textFill="#cccb9d">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Segment_label" layoutX="728.0" layoutY="318.0" prefHeight="27.0" prefWidth="99.0" text="Сегмент" textFill="#cccb9d">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Cost_Field" layoutX="838.0" layoutY="361.0" prefHeight="25.0" prefWidth="191.0" />
+            <Label fx:id="Cost_label" layoutX="728.0" layoutY="360.0" prefHeight="27.0" prefWidth="99.0" text="Цена" textFill="#cccb9d">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Count_Field" layoutX="838.0" layoutY="402.0" prefHeight="25.0" prefWidth="191.0" />
+            <Label fx:id="Count_label" layoutX="728.0" layoutY="401.0" prefHeight="27.0" prefWidth="99.0" text="Количество" textFill="#cccb9d">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="Add_btn" layoutX="809.0" layoutY="451.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Добавить" />
+            <Button fx:id="Delete_btn" layoutX="809.0" layoutY="537.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Снять с продажи" />
+            <Button fx:id="Refresh_btn" layoutX="930.0" layoutY="76.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="114.0" text="Перезагрузка" />
+            <CheckBox fx:id="SegmentBox" layoutX="844.0" layoutY="318.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="156.0" text="Класс Люкс" textFill="#cccb9d">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
+            </children>
+        </AnchorPane>
+        <Label layoutX="387.0" layoutY="14.0" text="AdminPanel">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

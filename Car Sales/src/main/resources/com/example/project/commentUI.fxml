@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cccb9d;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semproj.controller.CommentController">
+    <children>
+        <AnchorPane fx:id="ActorP" layoutX="-7.0" layoutY="84.0" prefHeight="449.0" prefWidth="845.0" style="-fx-background-color: #212121;">
+            <children>
+                <TableView fx:id="productTable" layoutX="12.0" layoutY="14.0" prefHeight="342.0" prefWidth="828.0">
+                    <columns>
+                        <TableColumn fx:id="id" prefWidth="52.0" text="Id" />
+                        <TableColumn fx:id="name" prefWidth="260.0" text="Name" />
+                        <TableColumn fx:id="grade" prefWidth="515.0" text="Grade" />
+                    </columns>
+                </TableView>
+            <Button fx:id="Back_btn" layoutX="339.0" layoutY="374.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="174.0" text="Назад">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="244.0" layoutY="17.0" text="LKS Showroom">
+            <font>
+                <Font name="ISOCT2_IV50" size="36.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

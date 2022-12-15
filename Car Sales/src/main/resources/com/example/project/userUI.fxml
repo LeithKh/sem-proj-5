@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cccb9d;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semproj.controller.UserController">
+    <children>
+        <AnchorPane fx:id="ActorP" layoutX="-7.0" layoutY="84.0" prefHeight="342.0" prefWidth="757.0" style="-fx-background-color: #212121;">
+         <children>
+            <Button fx:id="Profile_btn" layoutX="71.0" layoutY="14.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="114.0" text="Профиль" />
+            <Button fx:id="Product_btn" layoutX="281.0" layoutY="14.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="114.0" text="Товары" />
+            <Button fx:id="WishList_btn" layoutX="492.0" layoutY="14.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="114.0" text="Корзина" />
+            <Button fx:id="Exit_btn" layoutX="338.0" layoutY="272.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="114.0" text="Выход" />
+            <Label fx:id="One" layoutX="19.0" layoutY="109.0" prefHeight="29.0" prefWidth="69.0" text="Имя:" textFill="#cccb9d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="Two" layoutX="19.0" layoutY="137.0" prefHeight="29.0" prefWidth="69.0" text="Фамилия:" textFill="#cccb9d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="ChangePassword_btn" layoutX="269.0" layoutY="173.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="133.0" text="Изменить пароль" />
+            <Label fx:id="Five" layoutX="19.0" layoutY="198.0" prefHeight="29.0" prefWidth="114.0" text="Денег на счёте: " textFill="#cccb9d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="Four" layoutX="19.0" layoutY="168.0" prefHeight="29.0" prefWidth="149.0" text="Логин в приложении:" textFill="#cccb9d">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="UpBalance_btn" layoutX="269.0" layoutY="122.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="133.0" text="Пополнить баланс" />
+            <Label fx:id="FirstName_Field" layoutX="168.0" layoutY="109.0" prefHeight="29.0" prefWidth="69.0" text="имя" textFill="#d03a3a">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="LastName_Field" layoutX="168.0" layoutY="137.0" prefHeight="29.0" prefWidth="69.0" text="имя" textFill="#d03a3a">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="UserName_Field" layoutX="168.0" layoutY="168.0" prefHeight="29.0" prefWidth="69.0" text="имя" textFill="#d03a3a">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="Balance_Fiield" layoutX="168.0" layoutY="198.0" prefHeight="29.0" prefWidth="69.0" text="имя" textFill="#d03a3a">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ChangeBalance_Field" layoutX="435.0" layoutY="124.0" prefHeight="25.0" prefWidth="163.0" promptText="Пополнить" />
+            <TextField fx:id="ChangePassword_Field" layoutX="435.0" layoutY="175.0" prefHeight="25.0" prefWidth="163.0" promptText="Новый пароль" />
+            <CheckBox fx:id="Language" layoutX="672.0" layoutY="57.0" mnemonicParsing="false" text="English" textFill="WHITE" />
+            <CheckBox fx:id="Theme" layoutX="672.0" layoutY="20.0" mnemonicParsing="false" text="White" textFill="WHITE" />
+         </children>
+        </AnchorPane>
+        <Label layoutX="204.0" layoutY="14.0" text="LKS Showroom">
+            <font>
+                <Font name="ISOCT3_IV50" size="36.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cccb9d;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semproj.controller.CartController">
+    <children>
+        <AnchorPane fx:id="ActorP" layoutX="-7.0" layoutY="84.0" prefHeight="342.0" prefWidth="757.0" style="-fx-background-color: #212121#212121;">
+            <children>
+                <Button fx:id="Profile_btn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="114.0" text="Профиль" />
+                <Button fx:id="Product_btn" layoutX="321.0" layoutY="14.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="114.0" text="Товары" />
+                <Button fx:id="WishList_btn" layoutX="629.0" layoutY="14.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="114.0" text="Корзина" />
+                <Button fx:id="Exit_btn" layoutX="14.0" layoutY="281.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="114.0" text="Выход" />
+            <TableView fx:id="cartTable" layoutX="176.0" layoutY="66.0" prefHeight="154.0" prefWidth="545.0">
+              <columns>
+                  <TableColumn fx:id="id" prefWidth="84.0" text="id" />
+                <TableColumn fx:id="name" prefWidth="172.0" text="Name" />
+                <TableColumn fx:id="count" prefWidth="106.0" text="Count" />
+                  <TableColumn fx:id="cost" prefWidth="182.0" text="Cost" />
+              </columns>
+            </TableView>
+            <Label fx:id="One" layoutX="14.0" layoutY="230.0" prefHeight="29.0" prefWidth="82.0" text="Баланс:" textFill="#cccb9d">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Balance_Label" layoutX="89.0" layoutY="230.0" prefHeight="29.0" prefWidth="82.0" text="xxxxxx" textFill="#59ab44">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="Buy_btn" layoutX="449.0" layoutY="256.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="174.0" text="Купить">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="Delete_btn" layoutX="246.0" layoutY="256.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="174.0" text="Удалить">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="200.0" layoutY="14.0" text="LKS Showroom">
+            <font>
+                <Font name="ISOCT2_IV50" size="36.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
